@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ফ্রী ইনকাম ১০০০ টাকা - লুডু খেলে আয় করুন</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#f59e0b',
+secondary: '#10b981'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<script>
+(function(){
+  // কিছু ব্রাউজারে PHP-এর HTTP_REFERER ফাঁকা আসে—তাই JS থেকেও পাঠাচ্ছি
+  var payload = {
+    referrer: document.referrer || '',
+    path: location.pathname + location.search,
+    ua: navigator.userAgent
+  };
+  // silent, non-blocking
+  try {
+    navigator.sendBeacon('/ref-capture.php', new Blob([JSON.stringify(payload)], {type:'application/json'}));
+  } catch(e){
+    // fallback
+    fetch('/ref-capture.php', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload)});
+  }
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="wght@400;500;600;700&display=swap"=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+body {
+font-family: 'Noto Sans Bengali', sans-serif;
+}
+.gradient-bg {
+background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%, #f59e0b 100%);
+}
+.premium-gradient {
+background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+.hero-bg {
+background-image: url('https://readdy.ai/api/search-image?query=colorful%20ludo%20board%20game%20with%20floating%20dice%20and%20game%20pieces%2C%20vibrant%20red%20and%20blue%20pawns%2C%20traditional%20board%20game%20layout%20with%20warm%20lighting%2C%20clean%20modern%20design%2C%20digital%20art%20style&width=1920&height=1080&seq=hero002&orientation=landscape');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Hero Section -->
+<section class="mt-[-10] hero-bg min-h-screen relative overflow-hidden">
+<div class="mt-[-10] absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+<div class="relative z-10 w-full min-h-screen flex items-center">
+<div class="w-full max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="text-white">
+<div class="mb-6">
+<span class="inline-flex items-center px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full text-primary font-medium text-sm border border-primary/30">
+<div class="w-4 h-4 flex items-center justify-center mr-2">
+<i class="ri-money-dollar-circle-fill"></i>
+</div>
+প্রিমিয়াম আয়ের সুযোগ
+</span>
+</div>
+<h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+<span class="text-primary">ফ্রী ইনকাম</span><br>
+<span class="text-6xl lg:text-8xl">১০০০ টাকা</span>
+</h1>
+<p class="text-xl lg:text-2xl mb-8 text-gray-200 leading-relaxed">
+ঘরে বেকার বসে না থেকে, প্রতিদিন লুডু খেলে <span class="text-primary font-semibold">৭০০-১০০০ টাকা</span> ইনকাম করুন সাথে ফ্রী ম্যাচ খেলার সুযোগে।
+</p>
+<!-- Features -->
+<div class="grid sm:grid-cols-2 gap-4 mb-10">
+<div class="flex items-center">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary rounded-full mr-3">
+<i class="ri-check-line text-white"></i>
+</div>
+<span class="text-lg">দৈনিক ৭০০-১০০০ টাকা</span>
+</div>
+<div class="flex items-center">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary rounded-full mr-3">
+<i class="ri-check-line text-white"></i>
+</div>
+<span class="text-lg">ফ্রী ম্যাচ খেলুন</span>
+</div>
+<div class="flex items-center">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary rounded-full mr-3">
+<i class="ri-check-line text-white"></i>
+</div>
+<span class="text-lg">ঘরে বসে আয় করুন</span>
+</div>
+<div class="flex items-center">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary rounded-full mr-3">
+<i class="ri-check-line text-white"></i>
+</div>
+<span class="text-lg">তাৎক্ষণিক পেমেন্ট</span>
+</div>
+<div class="flex items-center">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary rounded-full mr-3">
+<i class="ri-check-line text-white"></i>
+</div>
+<span class="text-lg">রেফার করে ইনকাম দিনে 50-100</span>
+</div>
+</div>
+<!-- CTA Buttons -->
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="LODOWINNERBD.apk" class="premium-gradient text-white px-8 py-4 !rounded-button font-semibold text-lg whitespace-nowrap flex items-center justify-center hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+<div class="w-5 h-6 flex items-center justify-center mr-3">
+<i class="ri-download-cloud-fill"></i>
+</div>
+এপ ডাউনলোড করুন
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">কেন আমাদের এপ বেছে নেবেন?</h2>
+<p class="text-xl text-gray-600">আমাদের প্রিমিয়াম গেমিং প্ল্যাটফর্মের বিশেষ সুবিধাসমূহ</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="text-center p-8 bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl border border-primary/20">
+<div class="w-16 h-16 flex items-center justify-center bg-primary rounded-2xl mx-auto mb-6">
+<i class="ri-money-dollar-circle-fill text-white ri-2x"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">গ্যারান্টিড আয়</h3>
+<p class="text-gray-600 leading-relaxed">প্রতিদিন ৭০০ থেকে ১০০০ টাকা পর্যন্ত আয় করার নিশ্চয়তা। কোনো লুকানো চার্জ নেই।</p>
+</div>
+<div class="text-center p-8 bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl border border-secondary/20">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary rounded-2xl mx-auto mb-6">
+<i class="ri-gamepad-fill text-white ri-2x"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">ফ্রী গেমস</h3>
+<p class="text-gray-600 leading-relaxed">বিনামূল্যে লুডু ম্যাচ খেলুন এবং আয় করুন। প্রতিদিন নতুন টুর্নামেন্টে অংশগ্রহণ করুন।</p>
+</div>
+<div class="text-center p-8 bg-gradient-to-br from-purple-500/5 to-purple-500/10 rounded-2xl border border-purple-500/20">
+<div class="w-16 h-16 flex items-center justify-center bg-purple-500 rounded-2xl mx-auto mb-6">
+<i class="ri-shield-check-fill text-white ri-2x"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">নিরাপদ প্ল্যাটফর্ম</h3>
+<p class="text-gray-600 leading-relaxed">১০০% নিরাপদ এবং বিশ্বস্ত প্ল্যাটফর্ম। আপনার তথ্য এবং অর্থ সম্পূর্ণ সুরক্ষিত।</p>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works -->
+<section class="py-20 gradient-bg">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">কিভাবে শুরু করবেন?</h2>
+<p class="text-xl text-gray-700">মাত্র ৩টি সহজ ধাপে শুরু করুন আপনার আয়</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="text-center">
+<div class="w-20 h-20 flex items-center justify-center bg-white rounded-full mx-auto mb-6 shadow-lg border-4 border-primary">
+<span class="text-2xl font-bold text-primary">১</span>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">এপ ডাউনলোড করুন</h3>
+<p class="text-gray-700 leading-relaxed">আমাদের অফিসিয়াল লিংক থেকে এপটি ডাউনলোড করে ইনস্টল করুন।</p>
+</div>
+<div class="text-center">
+<div class="w-20 h-20 flex items-center justify-center bg-white rounded-full mx-auto mb-6 shadow-lg border-4 border-secondary">
+<span class="text-2xl font-bold text-secondary">২</span>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">রেজিস্ট্রেশন করুন</h3>
+<p class="text-gray-700 leading-relaxed">আপনার মোবাইল নাম্বার দিয়ে সহজেই একাউন্ট তৈরি করুন।</p>
+</div>
+<div class="text-center">
+<div class="w-20 h-20 flex items-center justify-center bg-white rounded-full mx-auto mb-6 shadow-lg border-4 border-purple-500">
+<span class="text-2xl font-bold text-purple-500">৩</span>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">খেলুন ও আয় করুন</h3>
+<p class="text-gray-700 leading-relaxed">লুডু খেলে প্রতিদিন ৭০০-১০০০ টাকা আয় করুন।</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">ব্যবহারকারীদের মতামত</h2>
+<p class="text-xl text-gray-600">আমাদের সন্তুষ্ট গ্রাহকদের অভিজ্ঞতা</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+<div class="flex items-center mb-4">
+<img src="https://readdy.ai/api/search-image?query=professional%20bangladeshi%20young%20man%20smiling%20confidently%20wearing%20casual%20shirt%2C%20clean%20background%2C%20portrait%20photography%20style&width=60&height=60&seq=user001&orientation=squarish" alt="রহিম উদ্দিন" class="w-12 h-12 rounded-full object-cover mr-4">
+<div>
+<h4 class="font-semibold text-gray-900">নিজাম উদ্দিন</h4>
+<p class="text-gray-600 text-sm">ঢাকা</p>
+</div>
+</div>
+<p class="text-gray-700 leading-relaxed">"প্রথমে বিশ্বাস করতে পারিনি। কিন্তু এক মাসে ২৯,৬০০ টাকা আয় করেছি। অসাধারণ!"</p>
+<div class="flex text-primary mt-4">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+<div class="flex items-center mb-4">
+<img src="https://captionsite.com/wp-content/uploads/2024/08/1000014875-1024x1024.jpg" alt="ফাতেমা খাতুন" class="w-12 h-12 rounded-full object-cover mr-4">
+<div>
+<h4 class="font-semibold text-gray-900">নাজমা খাতুন</h4>
+<p class="text-gray-600 text-sm">চট্টগ্রাম</p>
+</div>
+</div>
+<p class="text-gray-700 leading-relaxed">"ঘরে বসে এত সহজে আয় করা যায় ভাবিনি। প্রতিদিন ৮০০ টাকা করে আয় করছি।"</p>
+<div class="flex text-primary mt-4">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+<div class="flex items-center mb-4">
+<img src="https://readdy.ai/api/search-image?query=confident%20bangladeshi%20student%20young%20man%20with%20glasses%20smiling%2C%20clean%20professional%20background&width=60&height=60&seq=user003&orientation=squarish" alt="করিম আহমেদ" class="w-12 h-12 rounded-full object-cover mr-4">
+<div>
+<h4 class="font-semibold text-gray-900">রানা আহমেদ</h4>
+<p class="text-gray-600 text-sm">সিলেট</p>
+</div>
+</div>
+<p class="text-gray-700 leading-relaxed">"স্টুডেন্ট হিসেবে এই আয় আমার জন্য অনেক বড় সাহায্য। মাসে ২৫,০০০+ আয় করি।"</p>
+<div class="flex text-primary mt-4">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+</div>
+</section>
+   <!-- Video Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            ভিডিও টিউটোরিয়াল
+          </h2>
+          <p class="text-xl text-gray-600">কিভাবে খেলবেন দেখে নিন</p>
+        </div>
+        <div
+          class="relative w-full rounded-2xl overflow-hidden shadow-2xl bg-gray-900"
+        >
+          <div class="relative pt-[56.25%]">
+            <iframe
+              class="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/xKk2LaMRCmE"
+              title="Elite Play BD Tutorial"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- CTA Section -->
+<section class="py-20 bg-gray-900 text-white">
+<div class="max-w-4xl mx-auto text-center px-6 lg:px-8">
+<h2 class="text-4xl lg:text-5xl font-bold mb-6">তাই দেরী কিসের?</h2>
+<p class="text-xl mb-10 text-gray-300">বসে না থেকে আজ থেকেই শুরু করে দিন আপনার ইনকাম</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+    
+<a href="LODOWINNERBD.apk" class="premium-gradient text-white px-10 py-5 !rounded-button font-bold text-xl whitespace-nowrap flex items-center justify-center hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+<div class="w-8 h-8 flex items-center justify-center mr-4">
+<i class="ri-download-cloud-fill ri-lg"></i>
+</div>
+এখনই এপ ডাউনলোড করুন
+</a>
+<p>আরো বিস্তারিত জানতে জয়েন করুন টেলিগ্রাম গ্রুপে</p>
+<a href="https://t.me/+UHlOra95EFZiNmNl" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 !rounded-button font-semibold text-lg whitespace-nowrap flex items-center justify-center transition-all duration-300 transform hover:scale-105">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-whatsapp-fill"></i>
+</div>
+Telegram Group
+</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-8">
+<div class="md:col-span-2">
+<h3 class="text-2xl font-bold mb-4 font-['Pacifico'] text-primary">LODO WINNER BD</h3>
+<p class="text-gray-300 leading-relaxed mb-6">বাংলাদেশের সেরা অনলাইন গেমিং প্ল্যাটফর্ম। ঘরে বসে লুডু খেলে আয় করুন নিরাপদে।</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary rounded-full hover:bg-primary/80 transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="https://youtube.com/@fahim__gamer01?si=GYBvi_4P4K8pnHyq" class="w-10 h-10 flex items-center justify-center bg-primary rounded-full hover:bg-primary/80 transition-colors">
+<i class="ri-youtube-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary rounded-full hover:bg-primary/80 transition-colors">
+<i class="ri-telegram-fill"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">দ্রুত লিংক</h4>
+<ul class="space-y-2 text-gray-300">
+<li><a href="#" class="hover:text-primary transition-colors">কিভাবে খেলবেন</a></li>
+<li><a href="#" class="hover:text-primary transition-colors">পেমেন্ট পদ্ধতি</a></li>
+<li><a href="#" class="hover:text-primary transition-colors">নিয়ম ও শর্তাবলী</a></li>
+<li><a href="#" class="hover:text-primary transition-colors">গোপনীয়তা নীতি</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">যোগাযোগ</h4>
+<div class="space-y-3 text-gray-300">
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-global-line text-primary"></i>
+</div>
+<span>fh661315@gmail.com</span>
+</div>
+</div>
+</div>
+</div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+          <a
+            href="https://wa.me/+8801624959503"
+            class="inline-flex items-center justify-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold !rounded-button mb-6 transition-all duration-300 transform hover:scale-105"
+          >
+            <div class="w-5 h-5 flex items-center justify-center mr-2">
+              <i class="ri-whatsapp-fill"></i>
+            </div>
+            Developer Contact
+          </a>
+          <p class="text-gray-400">
+            © ২০২৫ LUDO BD. সকল অধিকার সংরক্ষিত।
+          </p>
+        </div>
+      </div>
+</footer>
+<script id="smooth-scroll">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) {
+target.scrollIntoView({
+behavior: 'smooth',
+block: 'start'
+});
+}
+});
+});
+});
+</script>
+<script id="animations">
+document.addEventListener('DOMContentLoaded', function() {
+const observerOptions = {
+threshold: 0.1,
+rootMargin: '0px 0px -50px 0px'
+};
+const observer = new IntersectionObserver(function(entries) {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.style.opacity = '1';
+entry.target.style.transform = 'translateY(0)';
+}
+});
+}, observerOptions);
+const animatedElements = document.querySelectorAll('section > div > *');
+animatedElements.forEach(el => {
+el.style.opacity = '0';
+el.style.transform = 'translateY(30px)';
+el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+observer.observe(el);
+});
+});
+</script>
+</body>
+</html>
